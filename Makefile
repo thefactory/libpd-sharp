@@ -1,3 +1,5 @@
+.PHONY: clean
+
 all: Pd/libpd.a
 
 libpd/libpd.xcodeproj:

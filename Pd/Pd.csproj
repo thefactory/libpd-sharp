@@ -46,9 +46,6 @@
     <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Xamarin.ObjcBinding.CSharp.targets" />
-  <ItemGroup>
-    <ObjcBindingNativeLibrary Include="libpd.a" />
-  </ItemGroup>
   <ProjectExtensions>
     <MonoDevelop>
       <Properties>
@@ -60,4 +57,12 @@
       </Properties>
     </MonoDevelop>
   </ProjectExtensions>
+  <ItemGroup>
+    <ObjcBindingNativeLibrary Include="libpd.a" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="libpd.linkwith.cs">
+      <DependentUpon>libpd.a</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>

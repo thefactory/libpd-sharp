@@ -132,12 +132,14 @@ namespace Pd {
 
         [Static, Export("addToSearchPath:")]
         void AddToSearchPath(string path);
+
         /* [Static, Export ("openFile:path:")] */
         /* [unmapped: pointer: Pointer] OpenFile (string baseName, string pathName); */
         /* [Static, Export ("closeFile:")] */
         /* void CloseFile ([unmapped: pointer: Pointer] x); */
         /* [Static, Export ("dollarZeroForFile:")] */
         /* int DollarZeroForFile ([unmapped: pointer: Pointer] x); */
+
         [Static, Export("getBlockSize")]
         int GetBlockSize { get; }
 
