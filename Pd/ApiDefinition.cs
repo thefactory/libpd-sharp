@@ -139,8 +139,8 @@ namespace Pd {
         [Static, Export ("closeFile:")]
         void CloseFile (IntPtr x);
 
-        /* [Static, Export ("dollarZeroForFile:")] */
-        /* int DollarZeroForFile ([unmapped: pointer: Pointer] x); */
+        [Static, Export ("dollarZeroForFile:")]
+        int DollarZeroForFile (IntPtr x);
 
         [Static, Export("getBlockSize")]
         int GetBlockSize { get; }
